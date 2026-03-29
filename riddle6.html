@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 6</title>
+<style>
+body{text-align:center;font-family:Arial;padding:40px;}
+input,button{padding:10px;margin:10px;width:80%;max-width:300px;}
+</style>
+<script>
+function checkAnswer(){
+let answer=document.getElementById("answer").value.toLowerCase();
+if(answer==="fire"){
+window.location="riddle7.html";
+}else{
+alert("Wrong answer! Try again.");
+}
+}
+</script>
+</head>
+<body>
+<h2>Riddle 6</h2>
+<p>I am not alive, but I grow. I don’t have lungs, but I need air. What am I?</p>
+<input type="text" id="answer">
+<br>
+<button onclick="checkAnswer()">Submit</button>
+</body>
+</html>
